@@ -48,16 +48,16 @@ public class ConnectionSQL extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(101, 101, 101)
+                .addGap(29, 29, 29)
                 .addComponent(btnConectar)
-                .addContainerGap(221, Short.MAX_VALUE))
+                .addContainerGap(293, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(63, 63, 63)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(150, Short.MAX_VALUE)
                 .addComponent(btnConectar)
-                .addContainerGap(215, Short.MAX_VALUE))
+                .addGap(128, 128, 128))
         );
 
         pack();
@@ -80,6 +80,11 @@ public class ConnectionSQL extends javax.swing.JFrame {
             
             
             JOptionPane.showMessageDialog(rootPane, bases);
+            
+            
+            Transacciones obj= new Transacciones();
+          
+            
             
         } catch (Exception e) {
             

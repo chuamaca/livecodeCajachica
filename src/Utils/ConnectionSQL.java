@@ -10,6 +10,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -19,7 +20,7 @@ public class ConnectionSQL {
     
     public static Connection getConexion(){
         
-        String conexionServer = "jdbc:sqlserver://DCODE:1433;"
+        String conexionServer = "jdbc:sqlserver://DCODE\\SQLEXPRESS:1433;"
                 + "database=POOCajachica;"
                 +"user=sa;"
                 +"password=BANKpower9719;"
@@ -32,7 +33,7 @@ public class ConnectionSQL {
             
         } catch(SQLException ex){
             
-            System.out.println(ex.toString());
+             JOptionPane.showMessageDialog(null, ex.toString());
             return null;
         
         }
